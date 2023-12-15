@@ -156,7 +156,8 @@ footer p {
     100% {
         transform: scale(1);
     }
-/* hulp gehad van :https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate */
+
+    /* hulp gehad van :https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate */
 }
 
 .sushi {
@@ -229,7 +230,11 @@ video {
     border-radius: 1em
 }
 
-.collage h1 {
-    font-size:larger;
+.collage h2 {
+    font-size: larger;
     margin: 1em;
+}
+
+#inleiding {
+    display: flex;
 }
