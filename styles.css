@@ -1,11 +1,235 @@
-body{
-    background-color: beige;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(#EBCAB1, white);
 }
-li{
-    border: 1px solid black;
-    padding-left: 2em;
-    background-color: bisque;
+
+main {
+    width: 80vw;
+    margin: auto;
+    margin-top: 14em;
 }
-h1{
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #59634A;
+    border-radius: 1em;
+    padding: 0.5em;
+    background-color: #b6c2ad;
+    width: 200px;
+    list-style-type: none;
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+    box-shadow: 3px 3px #ae7d89;
+}
+
+li a {
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
     text-align: center;
+    font-family: monospace, 'Courier New', Courier;
+    font-size: xx-large;
+}
+
+img {
+    max-width: 18vw;
+    margin: auto;
+    margin-right: 1em;
+
+}
+
+h2 {
+    text-align: center;
+    font-family: monospace, 'Courier New', Courier;
+    font-weight: bold;
+}
+
+li:hover {
+    background-color: #cb7489;
+    border: 1px solid #965665;
+}
+
+a:link,
+a:visited {
+    color: black;
+}
+
+a:active,
+a:hover {
+    color: pink;
+}
+
+
+.collage {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 3.5em;
+    margin-top: 3em;
+    text-align: center;
+}
+
+.cultuur {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 2em;
+    background-color: lightpink;
+    padding: 2em;
+    box-shadow: 7px 7px #9f8978;
+}
+
+.cultuur img {
+    margin-left: 2em;
+    box-shadow: 7px 7px #965665;
+}
+
+div.cultuur:nth-of-type(4) img:nth-child(2) {
+    margin-right: 0em;
+}
+
+div:nth-of-type(5) {
+    margin-bottom: 2em;
+}
+
+footer {
+    background-color: #88977E;
+    color: white;
+    width: 100vw;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    padding-left: 2em;
+}
+
+footer p {
+    margin-top: 1em;
+}
+
+.hellokitty {
+    display: flex;
+    margin: auto;
+    animation: draaien 2s ease;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+@keyframes draaien {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.vliegtuig {
+    animation: vliegen 2s ease;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+@keyframes vliegen {
+    0% {
+        transform: scale(0.5) translate(200px, 200px);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+/* hulp gehad van :https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate */
+}
+
+.sushi {
+    animation: sushi 2s ease;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+@keyframes sushi {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(2);
+    }
+
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+header {
+    background-color: whitesmoke;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin-bottom: 2em;
+    border: 2px solid #88977E;
+    /* hulp gehad van: https://developer.mozilla.org/en-US/docs/Web/CSS/position 
+    en https://internetingishard.netlify.app/html-and-css/advanced-positioning/ */
+}
+
+.logo img {
+    margin-left: 2em;
+    max-width: 8em;
+    font-family: monospace;
+    margin-bottom: -60px;
+}
+
+.logo p {
+    font-size: xx-large;
+    margin: auto;
+    margin-bottom: 0.5em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+}
+
+.eten {
+    display: flex;
+    background-color: whitesmoke;
+    padding: 1em;
+    border: 1px solid;
+    margin-bottom: 2em;
+    box-shadow: 7px 7px #9f8978;
+}
+
+video {
+    margin-right: 2em;
+}
+
+.plaatsen div {
+    display: flex;
+    box-shadow: 5px 5px #9f8978;
+    background-color: whitesmoke;
+    padding: 1.5em;
+    padding-bottom: 0em;
+    border-radius: 1em
+}
+
+.collage h1 {
+    font-size:larger;
+    margin: 1em;
 }
