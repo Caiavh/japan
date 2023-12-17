@@ -104,7 +104,7 @@ div:nth-of-type(5) {
 
 footer {
     background-color: #88977E;
-    color: white;
+    color: black;
     width: 100vw;
     margin: 0;
     position: absolute;
@@ -119,9 +119,8 @@ footer p {
 .hellokitty {
     display: flex;
     margin: auto;
-    animation: draaien 2s ease;
+    animation: draaien 2s linear infinite;
     animation-timing-function: linear;
-    animation-iteration-count: 1;
 }
 
 @keyframes draaien {
@@ -135,6 +134,12 @@ footer p {
 
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hellokitty {
+        animation: none;
     }
 }
 
@@ -157,8 +162,15 @@ footer p {
         transform: scale(1);
     }
 
-    /* hulp gehad van :https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate */
 }
+
+@media (prefers-reduced-motion: reduce) {
+    .vliegtuig {
+        animation: none;
+    }
+}
+
+/* hulp gehad van :https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate */
 
 .sushi {
     animation: sushi 2s ease;
@@ -180,6 +192,15 @@ footer p {
     }
 }
 
+@media (prefers-reduced-motion: reduce) {
+    .sushi {
+        animation: none;
+    }
+
+    /*https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion */
+}
+
+
 header {
     background-color: whitesmoke;
     position: absolute;
@@ -194,7 +215,7 @@ header {
 
 .logo img {
     margin-left: 2em;
-    max-width: 8em;
+    width: 8em;
     font-family: monospace;
     margin-bottom: -60px;
 }
